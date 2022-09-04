@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {LessonsService} from "../services/lessons.service";
+import {LessonsService} from '../services/lessons.service';
 import {Observable, of} from 'rxjs';
-import {Lesson} from "../model/lesson";
-import {SwPush} from "@angular/service-worker";
+import {Lesson} from '../model/lesson';
+import {SwPush} from '@angular/service-worker';
 import {catchError} from 'rxjs/operators';
 
 @Component({
