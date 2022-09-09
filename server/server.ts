@@ -1,30 +1,25 @@
 
 import * as express from 'express';
-import {Application} from "express";
-import {readAllLessons} from "./read-all-lessons.route";
-import {addPushSubscriber} from "./add-push-subscriber.route";
-import {sendNewsletter} from "./send-newsletter.route";
+import {Application} from 'express';
+import {readAllLessons} from './read-all-lessons.route';
+import {addPushSubscriber} from './add-push-subscriber.route';
+import {sendNewsletter} from './send-newsletter.route';
 const bodyParser = require('body-parser');
 
 const webpush = require('web-push');
 
 
 const vapidKeys = {
-    publicKey: "TODO",
-    privateKey: "TODO"
+    'publicKey': 'BLnVk1MBGFBW4UxL44fuoM2xxQ4o9CuxocVzKn9UVmnXZEyPCTEFjI4sALMB8qN5ee67yZ6MeQWjd5iyS8lINAg',
+    'privateKey': 'mp5xYHWtRTyCA63nZMvmJ_qmYO6A1klSotcoppSx-MI'
 };
 
-/*
-
-    TODO - uncomment after generating your VAPID keys
 
 webpush.setVapidDetails(
-    'mailto:example@yourdomain.org',
-    vapidKeys.publicKey,
-    vapidKeys.privateKey
+  'mailto:example@yourdomain.org',
+  vapidKeys.publicKey,
+  vapidKeys.privateKey
 );
-
-*/
 
 
 const app: Application = express();
@@ -46,15 +41,6 @@ app.route('/api/newsletter')
 
 
 // launch an HTTP Server
-const httpServer:any = app.listen(9000, () => {
-    console.log("HTTP Server running at http://localhost:" + httpServer.address().port);
+const httpServer: any = app.listen(9000, () => {
+    console.log('HTTP Server running at http://localhost:' + httpServer.address().port);
 });
-
-
-
-
-
-
-
-
-
