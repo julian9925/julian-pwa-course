@@ -10,8 +10,8 @@ const webpush = require('web-push');
 
 
 const vapidKeys = {
-    'publicKey': 'BLnVk1MBGFBW4UxL44fuoM2xxQ4o9CuxocVzKn9UVmnXZEyPCTEFjI4sALMB8qN5ee67yZ6MeQWjd5iyS8lINAg',
-    'privateKey': 'mp5xYHWtRTyCA63nZMvmJ_qmYO6A1klSotcoppSx-MI'
+    'publicKey': 'BFbuXqQFF8CwI6Qg3KbIwrweTsJLG5X0tQh6uWUdizq_TuPMqcWRILK0V5P9DvwMFpUbLl48VD7ehU9Elamqh78',
+    'privateKey': 'mfvckBPbdmIFfz1hvcV3vK6HCijf7ZsEG6CW5L2wCgk'
 };
 
 

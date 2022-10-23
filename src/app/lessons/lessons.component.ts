@@ -17,7 +17,7 @@ export class LessonsComponent implements OnInit {
     isLoggedIn$: Observable<boolean>;
     sub: PushSubscription;
 
-    readonly VAPID_PUBLIC_KEY = 'BLnVk1MBGFBW4UxL44fuoM2xxQ4o9CuxocVzKn9UVmnXZEyPCTEFjI4sALMB8qN5ee67yZ6MeQWjd5iyS8lINAg';
+    readonly VAPID_PUBLIC_KEY = 'BFbuXqQFF8CwI6Qg3KbIwrweTsJLG5X0tQh6uWUdizq_TuPMqcWRILK0V5P9DvwMFpUbLl48VD7ehU9Elamqh78';
 
     constructor(
         private lessonsService: LessonsService,
